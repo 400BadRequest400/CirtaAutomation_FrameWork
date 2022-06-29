@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="amazon smoke amazon">
+
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="mac"></parameter>
+    <parameter name="osVersion" value="11"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="99"></parameter>
+    <parameter name="url" value="https://us.etrade.com/"></parameter>
+
+
+
+    <!--        <test name="floating menu amazon">-->
+    <!--            <classes>-->
+    <!--                <class name="homeTest.FloatingMenuTest"></class>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--        <test name="search amazon">-->
+    <!--            <classes>-->
+    <!--                <class name="homeTest.SearchTest"></class>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--    <test name="dropdown amazon">-->
+    <!--        <classes>-->
+    <!--            <class name="homeTest.DropdownTest"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Local Data">
+        <classes>
+<!--            <class name="datadriventest.LocalDataTest"></class>-->
+        </classes>
+    </test>
+
+        <test name="Excel Data">
+            <classes>
+<!--                <class name="datadriventest.ExcelDataTest"></class>-->
+            </classes>
+        </test>
+
+    <test name="Open An Account">
+        <classes>
+<!--            <class name="homepagetest.BankAccount"></class>-->
+        </classes>
+    </test>
+
+    <test name="LogIn Account">
+        <classes>
+                        <class name="homepagetest.LogInPageTest"></class>
+        </classes>
+    </test>
+
+
+
+</suite>
