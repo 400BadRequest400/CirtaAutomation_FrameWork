@@ -298,4 +298,15 @@ public class CommonAPI {
         }
     }
 
+    //handling Alert
+    public void okAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+
+    public void cancelAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+    }
+
 }
